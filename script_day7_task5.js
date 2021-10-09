@@ -21,8 +21,11 @@ var currency = result.filter(ele=>
         {
             console.log(ele.name+": "+ele.currencies[0].code);
         }
+        if ((ele.currencies[1].code==="USD")===true)
+        {
+            console.log(ele.name+": "+ele.currencies[1].code);
+        }
         }catch(e){
-        console.log(e.message+" "+ele.name);
         }
     })
 }
